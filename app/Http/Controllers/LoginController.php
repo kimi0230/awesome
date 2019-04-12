@@ -12,6 +12,9 @@ class LoginController extends Controller
 
     public function loginProcess(Request $request)
     {
+        // dd($request->all());
+        // dd(Auth::guard());
+
         $result = [
             'status' => false,
             'token' => '',
